@@ -1,0 +1,43 @@
+/*bodyへの設定*/
+body {
+  /* 画像のファイル名を指定する */
+  background-image: url('sekaitizu.jpg');
+  
+  /*画像が画面全体にいい感じに広がるようにする設定 */
+  background-size: cover;
+  
+  /*  表示画面の真ん中に画像が合うようにしてると*/
+  background-position: center;
+  
+  /* 画像が画面より小さい場合に、タイル状にパタパタと何度も繰り返して
+  表示されてしまう現象を防ぐ*/
+  background-repeat: no-repeat;
+  
+  /* スマホなどで見たときに、最低でも画面の高さ一杯に広げる */
+  min-height: 100vh;
+  /*余白をゼロにする*/
+  margin: 0;
+
+  /*  縦軸・横軸の真ん中に配置する設定
+  以下すべては設定項目：内容のようになっている*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 縦方向の真ん中 */
+  align-items: center;     /* 横方向の真ん中 */
+
+  /*  全ての文字を黄緑色にして、背景の上で見やすく太字にする */
+  color: yellowgreen; 
+  /*全体を太字にする*/
+  font-weight: bold;
+}
+
+/*  ulタグにについての設定　　ロンドンとアメリカを左右に綺麗に振り分ける設定　*/
+ul {
+  display: flex;                  /* 横並びにする */
+  justify-content: space-between; /* 左右の端っこに引き離す */
+  list-style: none;               /* リストの黒丸（・）を消す */
+  padding: 0;                     /* 余分な余白を消す */
+  width: 80%;                     /* 画面に対する幅を広げる */
+  max-width: 600px;               /* マックス幅を広げて「もっと外側」に配置する */
+  margin: 20px auto;              /* 上下のマージン */
+}
